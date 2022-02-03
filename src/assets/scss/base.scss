@@ -12,5 +12,6 @@
     color: $secondary-color;  
     font-size: 18px;
     line-height: normal;
-    font-weight: 300;     
+    font-weight: 300;
+    background-image: linear-gradient($secondary-linear-color,$primary-linear-color,$secondary-linear-color);
   }
