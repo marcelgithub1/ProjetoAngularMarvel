@@ -76,6 +76,14 @@ a.active, a:hover
     {
         font-size: 1em;
     }
+
+    a.active, a:hover
+{   
+    color: $secondary-color;
+    background: $primary-color;
+    transition: .5s;
+    box-shadow: 1px 1px 8px 5px $secondary-color;
+}
 }
 
 @media (max-width: 858px)
@@ -107,12 +115,14 @@ a.active, a:hover
     nav ul li a 
     {           
         font-size: 20px;
-    }
+    }   
 
-    a:hover, a.active
-    {
-        background: none;
-        color: $third-color;
+    a.active, a:hover
+    {   
+    color: $secondary-color;
+    background: $primary-color;
+    transition: .5s;
+    box-shadow: 1px 1px 8px 5px $secondary-color;
     }
 
     #check:checked ~ ul
