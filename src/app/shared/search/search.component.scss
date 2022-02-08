@@ -1,0 +1,39 @@
+@import 'src/assets/scss/variables.scss';
+
+.search
+{   
+  display: flex;
+  align-items: center;
+  width: 20%;
+  height: 60px;
+  padding: .5em;
+  margin: 0 auto;        
+}
+
+input
+{
+  width: 100%;
+  height: 70%;
+  border:2px solid $primary-color;
+  border-radius: 10px;        
+}
+
+::placeholder
+{
+  text-align: center;        
+}
+
+.fa-search
+{ 
+  color: $primary-color;
+  width: 10px;
+  font-size: 25px;
+}    
+
+.icon
+{    
+  position: relative;  
+  background: transparent;
+  border: none;
+  cursor:pointer;    
+}

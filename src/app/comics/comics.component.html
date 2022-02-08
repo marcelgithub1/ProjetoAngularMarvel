@@ -1,3 +1,4 @@
+<app-search (searchOutput)="searchComics($event)"></app-search>
 <div class="content-comic">
     <app-card-item *ngFor="let comic of allComics | async"
     [img]="comic.thumbnail?.path + '.' +comic.thumbnail?.extension"

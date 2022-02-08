@@ -1,3 +1,4 @@
+<app-search (searchOutput)="searchEvents($event)"></app-search>
 <div class="content-event">
     <app-card-item *ngFor="let event of allEvents | async"
     [img]="event.thumbnail?.path + '.' +event.thumbnail?.extension"

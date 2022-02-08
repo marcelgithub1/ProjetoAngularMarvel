@@ -26,4 +26,9 @@ export class EventService{
     let urlEvent = `${environment.url_marvel}events/${id}?${this.finalUrl}`;
     return this.http.get<any>(urlEvent);
   }
+  
+  searchEvents(name: any):Observable<any>{    
+    let urlSearch = `${environment.url_marvel}events?nameStartsWith=${name}&${this.finalUrl}`;
+    return this.http.get<any>(urlSearch).pipe(map((data: any) => data.data.results));    
+  }
 }

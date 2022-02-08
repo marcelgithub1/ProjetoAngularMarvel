@@ -26,4 +26,9 @@ export class CharacterService{
     let urlCharacter = `${environment.url_marvel}characters/${id}?${this.finalUrl}`;
     return this.http.get<any>(urlCharacter);
   }
+
+  searchCharacters(name: any):Observable<any>{    
+    let urlSearch = `${environment.url_marvel}characters?nameStartsWith=${name}&${this.finalUrl}`;
+    return this.http.get<any>(urlSearch).pipe(map((data: any) => data.data.results));
+  }
 }
