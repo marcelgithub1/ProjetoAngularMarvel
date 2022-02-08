@@ -1,0 +1,56 @@
+@import 'src/assets/scss/variables.scss';
+
+.card
+{
+    width: 20%;  
+    display: inline-block;
+    margin-bottom: 50px;
+    height: 300px;
+    border: 1px solid $card-hover;
+    border-radius: 20% 0% 20% 0;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;    
+    transition: transform 0.5s;    
+}
+
+.card:hover
+{
+    transform: translateY(-10px);
+    box-shadow: 5px 10px 5px $card-hover;    
+}
+
+h5{
+    color: $primary-color;
+    position: relative;
+    top: 0;
+}
+
+.bg1
+{
+    background-image: url(https://terrigen-cdn-dev.marvel.com/content/prod/1x/005smp_ons_mnt_01_2.jpg);    
+    background-position: center;
+    background-size: cover;
+ }
+
+ .bg2
+ {
+    background-image: url(https://terrigen-cdn-dev.marvel.com/content/prod/1x/007blp_ons_inl_12_0.jpg);
+    background-position: center;
+    background-size: cover;
+ }
+
+ .bg3
+ {
+    background-image: url(https://i.annihil.us/u/prod/marvel/i/mg/f/40/5adf5e016c5df/clean.jpg);
+    background-position: center;
+    background-size: cover;    
+ }
+
+ .bg4
+ {
+    background-image: url(https://terrigen-cdn-dev.marvel.com/content/prod/1x/019tha_ons_pwr_03.jpg);
+    background-position: center;
+    background-size:cover;    
+ }
