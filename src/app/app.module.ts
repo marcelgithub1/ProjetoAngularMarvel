@@ -16,6 +16,7 @@ import { SeriesComponent } from './series/series.component';
 import { SerieComponent } from './series/serie/serie.component';
 import { CardItemComponent } from './shared/card-item/card-item.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SearchComponent } from './shared/search/search.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { HttpClientModule } from '@angular/common/http';
     EventComponent,
     SeriesComponent,
     SerieComponent,
-    CardItemComponent    
+    CardItemComponent,
+    SearchComponent    
   ],
   imports: [
     BrowserModule,

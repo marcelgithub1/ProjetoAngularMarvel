@@ -1,3 +1,4 @@
+<app-search (searchOutput)="searchCharacters($event)"></app-search>
 <div class="content-character">
     <app-card-item *ngFor="let character of allCharacters | async"
     [img]="character.thumbnail?.path + '.' +character.thumbnail?.extension"

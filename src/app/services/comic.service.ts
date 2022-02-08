@@ -26,4 +26,9 @@ export class ComicService{
     let urlComic = `${environment.url_marvel}comics/${id}?${this.finalUrl}`;
     return this.http.get<any>(urlComic);
   }
+
+  searchComics(name: any):Observable<any>{    
+    let urlSearch = `${environment.url_marvel}comics?titleStartsWith=${name}&${this.finalUrl}`;    
+    return this.http.get<any>(urlSearch).pipe(map((data: any) => data.data.results));
+  }
 }

@@ -1,3 +1,4 @@
+<app-search (searchOutput)="searchSeries($event)"></app-search>
 <div class="content-serie">
     <app-card-item *ngFor="let serie of allSeries | async"
     [img]="serie.thumbnail?.path + '.' + serie.thumbnail?.extension"

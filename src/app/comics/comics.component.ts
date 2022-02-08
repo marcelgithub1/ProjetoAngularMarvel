@@ -20,4 +20,8 @@ export class ComicsComponent implements OnInit {
   getComics() {
     this.allComics = this.comicService.getComics();    
   }
+
+  searchComics(name: string): void {    
+    this.allComics = this.comicService.searchComics(name);
+  }
 }

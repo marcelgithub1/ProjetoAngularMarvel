@@ -21,4 +21,8 @@ export class SeriesComponent implements OnInit {
   getSeries() {
     this.allSeries = this.serieService.getSeries();    
   }
+
+  searchSeries(name: string): void {    
+    this.allSeries = this.serieService.searchSeries(name);    
+  }
 }

@@ -20,4 +20,8 @@ export class CharactersComponent implements OnInit {
   getCharacters() {
     this.allCharacters = this.characterService.getCharacters();    
   }
+
+  searchCharacters(name: string): void {    
+    this.allCharacters = this.characterService.searchCharacters(name);  
+  }
 }

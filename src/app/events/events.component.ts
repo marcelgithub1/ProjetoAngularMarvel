@@ -19,4 +19,8 @@ export class EventsComponent implements OnInit {
   getEvents() {
     this.allEvents = this.eventService.getEvents();    
   }
+
+  searchEvents(name: string): void {    
+    this.allEvents = this.eventService.searchEvents(name);    
+  }
 }

@@ -26,4 +26,9 @@ export class SerieService{
     let urlSeries = `${environment.url_marvel}series/${id}?${this.finalUrl}`;
     return this.http.get<any>(urlSeries);
   }
+
+  searchSeries(name: any):Observable<any>{    
+    let urlSearch = `${environment.url_marvel}series?titleStartsWith=${name}&${this.finalUrl}`;
+    return this.http.get<any>(urlSearch).pipe(map((data: any) => data.data.results));
+  }
 }
