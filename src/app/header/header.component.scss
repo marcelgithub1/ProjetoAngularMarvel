@@ -11,6 +11,17 @@ nav
     width: 100%;
 }
 
+a
+{
+    color: $third-color;
+    text-decoration: none;    
+}
+
+a.active
+{
+    color: $third-color            
+}
+
 img
 {
     max-height: 50%;
@@ -78,12 +89,12 @@ a.active, a:hover
     }
 
     a.active, a:hover
-{   
-    color: $secondary-color;
-    background: $primary-color;
-    transition: .5s;
-    box-shadow: 1px 1px 8px 5px $secondary-color;
-}
+    {   
+        color: $secondary-color;
+        background: $primary-color;
+        transition: .5s;
+        box-shadow: 1px 1px 8px 5px $secondary-color;
+    }
 }
 
 @media (max-width: 858px)
@@ -119,10 +130,10 @@ a.active, a:hover
 
     a.active, a:hover
     {   
-    color: $secondary-color;
-    background: $primary-color;
-    transition: .5s;
-    box-shadow: 1px 1px 8px 5px $secondary-color;
+        color: $secondary-color;
+        background: $primary-color;
+        transition: .5s;
+        box-shadow: 1px 1px 8px 5px $secondary-color;
     }
 
     #check:checked ~ ul

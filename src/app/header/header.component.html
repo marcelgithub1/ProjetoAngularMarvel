@@ -5,13 +5,12 @@
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
-
         <ul>
-            <li><a class="active">Home</a></li>
-            <li><a>Personagens</a></li>
-            <li><a>Eventos</a></li>
-            <li><a>Revistas</a></li>
-            <li><a>Series</a></li>
+            <li><a class="active" [routerLink]="['']">Home</a></li>
+            <li><a [routerLink]="['/characters']">Personagens</a></li>
+            <li><a [routerLink]="['/events']">Eventos</a></li>
+            <li><a [routerLink]="['/comics']">Revistas</a></li>
+            <li><a [routerLink]="['/series']">Series</a></li>
         </ul>
-    </nav>      
+    </nav>
 </header>
