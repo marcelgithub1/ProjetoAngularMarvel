@@ -6,6 +6,14 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CardHomeComponent } from './home/card-home/card-home.component';
+import { CharactersComponent } from './characters/characters.component';
+import { CharacterComponent } from './characters/character/character.component';
+import { ComicsComponent } from './comics/comics.component';
+import { ComicComponent } from './comics/comic/comic.component';
+import { EventsComponent } from './events/events.component';
+import { EventComponent } from './events/event/event.component';
+import { SeriesComponent } from './series/series.component';
+import { SerieComponent } from './series/serie/serie.component';
 
 
 @NgModule({
@@ -14,7 +22,15 @@ import { CardHomeComponent } from './home/card-home/card-home.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    CardHomeComponent    
+    CardHomeComponent,
+    CharactersComponent,
+    CharacterComponent,
+    ComicsComponent,
+    ComicComponent,
+    EventsComponent,
+    EventComponent,
+    SeriesComponent,
+    SerieComponent    
   ],
   imports: [
     BrowserModule,
