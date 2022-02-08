@@ -1,1 +1,6 @@
-<p>comic works!</p>
+<div class="content-comic" *ngIf="comic">
+    <img [src]="comic.thumbnail?.path+'.'+comic.thumbnail?.extension">
+    <p class="title">{{ comic.title }}</p>
+    <p class="description">{{ comic.description || 'Lamentamos! Não há informações disponíveis no momento.' }}</p>
+    <a class="archor" [href]="'https://google.com.br/search?q='+comic.title+' marvel'" target="_blank">Saiba Mais.</a>    
+</div>

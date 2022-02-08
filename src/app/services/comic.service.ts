@@ -20,5 +20,10 @@ export class ComicService{
   getComics():Observable<any>{
     let urlComics = `${environment.url_marvel}comics?${this.finalUrl}`;    
     return this.http.get<any>(urlComics).pipe(map((data: any) => data.data.results));
-  }  
+  }
+  
+  getComic(id: any):Observable<any>{    
+    let urlComic = `${environment.url_marvel}comics/${id}?${this.finalUrl}`;
+    return this.http.get<any>(urlComic);
+  }
 }

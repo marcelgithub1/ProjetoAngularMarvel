@@ -20,5 +20,10 @@ export class CharacterService{
   getCharacters():Observable<any>{
     let urlCharacters = `${environment.url_marvel}characters?${this.finalUrl}`;    
     return this.http.get<any>(urlCharacters).pipe(map((data: any) => data.data.results));
-  }  
+  }
+  
+  getCharacter(id: any):Observable<any>{    
+    let urlCharacter = `${environment.url_marvel}characters/${id}?${this.finalUrl}`;
+    return this.http.get<any>(urlCharacter);
+  }
 }

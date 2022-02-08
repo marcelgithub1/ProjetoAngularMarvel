@@ -1,1 +1,6 @@
-<p>character works!</p>
+<div class="content-character" *ngIf="character">
+    <img [src]="character.thumbnail?.path+'.'+character.thumbnail?.extension">
+    <p class="title">{{ character.name }}</p>
+    <p class="description">{{ character.description || 'Lamentamos! Não há informações disponíveis no momento.' }}</p>
+    <a class="archor" [href]="'https://google.com.br/search?q='+character.name+' marvel'" target="_blank">Saiba Mais.</a>    
+</div>  

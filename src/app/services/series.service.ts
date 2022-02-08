@@ -20,5 +20,10 @@ export class SerieService{
   getSeries():Observable<any>{
     let urlSeriess = `${environment.url_marvel}series?${this.finalUrl}`;
     return this.http.get<any>(urlSeriess).pipe(map((data: any) => data.data.results));
-  }  
+  }
+  
+  getSerie(id: any):Observable<any>{    
+    let urlSeries = `${environment.url_marvel}series/${id}?${this.finalUrl}`;
+    return this.http.get<any>(urlSeries);
+  }
 }

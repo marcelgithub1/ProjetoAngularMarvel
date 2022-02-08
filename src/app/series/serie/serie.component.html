@@ -1,1 +1,6 @@
-<p>serie works!</p>
+<div class="content-serie" *ngIf="serie">
+    <img [src]="serie.thumbnail?.path+'.'+serie.thumbnail?.extension">
+    <p class="title">{{ serie.title }}</p>
+    <p class="description">{{ serie.description || 'Lamentamos! Não há informações disponíveis no momento.' }}</p>
+    <a class="archor" [href]="'https://google.com.br/search?q='+serie.title+' marvel'" target="_blank">Saiba Mais.</a>    
+</div>
