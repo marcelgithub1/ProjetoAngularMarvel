@@ -1,1 +1,6 @@
-<p>event works!</p>
+<div class="content-event" *ngIf="event">
+    <img [src]="event.thumbnail?.path+'.'+event.thumbnail?.extension">
+    <p class="title">{{ event.title }}</p>
+    <p class="description">{{ event.description || 'Lamentamos! Não há informações disponíveis no momento.' }}</p>
+    <a class="archor" [href]="'https://google.com.br/search?q='+event.title+' marvel'" target="_blank">Saiba Mais.</a>    
+</div>

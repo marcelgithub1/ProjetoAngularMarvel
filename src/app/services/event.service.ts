@@ -20,5 +20,10 @@ export class EventService{
   getEvents():Observable<any>{
     let urlEvents = `${environment.url_marvel}events?${this.finalUrl}`;
     return this.http.get<any>(urlEvents).pipe(map((data: any) => data.data.results));
-  }  
+  }
+
+  getEvent(id: any):Observable<any>{    
+    let urlEvent = `${environment.url_marvel}events/${id}?${this.finalUrl}`;
+    return this.http.get<any>(urlEvent);
+  }
 }
