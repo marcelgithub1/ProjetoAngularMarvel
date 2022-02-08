@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { ComicService } from '../services/comic.service';
 
 @Component({
   selector: 'app-comics',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComicsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private comicService: ComicService) { }
 
-  ngOnInit(): void {
+  allComics: Observable<any> | undefined; 
+
+  ngOnInit() {
+    this.getComics();
   }
 
+  getComics() {
+    this.allComics = this.comicService.getComics();    
+  }
 }

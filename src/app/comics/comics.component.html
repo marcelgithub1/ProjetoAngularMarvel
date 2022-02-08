@@ -1,1 +1,6 @@
-<p>comics works!</p>
+<div class="content-comic">
+    <app-card-item *ngFor="let comic of allComics | async"
+    [img]="comic.thumbnail?.path + '.' +comic.thumbnail?.extension"
+    [title]="comic.title" [url]="['comic/' + comic.id]">
+    </app-card-item>
+</div>

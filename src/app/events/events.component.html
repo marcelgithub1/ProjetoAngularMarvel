@@ -1,1 +1,6 @@
-<p>events works!</p>
+<div class="content-event">
+    <app-card-item *ngFor="let event of allEvents | async"
+    [img]="event.thumbnail?.path + '.' +event.thumbnail?.extension"
+    [title]="event.title" [url]="['event/' + event.id]">
+    </app-card-item>
+</div>

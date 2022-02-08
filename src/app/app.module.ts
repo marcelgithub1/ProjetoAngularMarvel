@@ -14,6 +14,8 @@ import { EventsComponent } from './events/events.component';
 import { EventComponent } from './events/event/event.component';
 import { SeriesComponent } from './series/series.component';
 import { SerieComponent } from './series/serie/serie.component';
+import { CardItemComponent } from './shared/card-item/card-item.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -24,17 +26,19 @@ import { SerieComponent } from './series/serie/serie.component';
     FooterComponent,
     CardHomeComponent,
     CharactersComponent,
-    CharacterComponent,
+    CharacterComponent,    
     ComicsComponent,
     ComicComponent,
     EventsComponent,
     EventComponent,
     SeriesComponent,
-    SerieComponent    
+    SerieComponent,
+    CardItemComponent    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
