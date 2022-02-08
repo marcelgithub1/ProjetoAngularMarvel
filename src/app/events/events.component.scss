@@ -4,11 +4,44 @@
 {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex-wrap: wrap;  
 }
 
 app-card-item {
   max-height: 70%;
   width: 20%;
   margin-bottom: 1rem;
+  
+}
+
+@media screen and (max-width: 1440px) 
+{
+  .content-event app-card-item 
+  {
+    width: 24%;
+  }
+}
+
+@media screen and (max-width: 992px) 
+{
+  .content-event app-card-item 
+  {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) 
+{
+  .content-event app-card-item 
+  {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) 
+{
+  .content-event app-card-item 
+  {
+    width: 100%;
+  }
 }

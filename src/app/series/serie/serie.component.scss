@@ -57,3 +57,27 @@ a:hover
 {
     text-decoration: underline;    
 }
+
+@media (max-width: 1200px)
+{
+    .content-serie
+    {
+        width: 50%;
+    }
+}
+
+@media (max-width: 970px)
+{
+    .content-serie
+    {
+        width: 70%;
+    }
+}
+
+@media (max-width: 750px)
+{
+    .content-serie
+    {
+        width: 90%;        
+    }
+}

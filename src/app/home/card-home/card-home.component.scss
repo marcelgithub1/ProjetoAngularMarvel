@@ -54,3 +54,38 @@ h5{
     background-position: center;
     background-size:cover;    
  }
+
+ @media screen and (max-width: 952px)
+{    
+    .card
+    {    
+        width: 45%;
+        height: 400px;
+        margin: 0 auto;
+        margin-bottom: 1em;
+        display: flex;        
+    }
+
+    h1
+    {
+        margin-bottom: .5em;
+    }   
+}
+
+@media screen and (max-width: 858px)
+{
+    .card
+    {
+        width:70%;
+        height:200px;
+    }
+}
+
+@media screen and (max-width: 538px)
+{
+    .card
+    {
+        width:60%;
+        height:150px;
+    }
+}

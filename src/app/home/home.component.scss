@@ -1,0 +1,73 @@
+@import 'src/assets/scss/variables.scss';
+
+.content-home
+{
+  width: 100%;
+  min-height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 7vh;
+}
+
+.row
+{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+h1
+{
+  font-size: 3em;  
+  color: $third-color;
+}
+
+h2
+{
+  font-size: 2em;
+  color: $third-color;
+}
+
+.mobile
+  {
+    display: none;
+    margin: 0 auto;
+  }
+
+  .desktop
+  {
+    display: block;
+  }
+
+  
+@media (max-width: 952px)
+{  
+  .row
+  {
+    height:100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile
+  {
+    display: block;
+    margin-bottom: 1em;
+  }
+
+  .desktop
+  {
+    margin-top: 3em;
+    color: transparent
+  }
+}
+
+@media screen and (max-device-height: 600)
+{
+  .content-home
+  {
+    margin-top: 0rem;
+  }
+}

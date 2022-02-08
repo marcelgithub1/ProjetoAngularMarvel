@@ -2,16 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 * {
-    box-sizing: border-box;
-  }
-  
-  html, body {    
-    width: 100%;
-    height: 100%;
-    font-family: 'Marvel', sans-serif;
-    color: $secondary-color;  
-    font-size: 18px;
-    line-height: normal;
-    font-weight: 300;
-    background-image: linear-gradient($secondary-linear-color,$primary-linear-color,$secondary-linear-color);
-  }
+  box-sizing: border-box;
+}
+
+html, body {    
+  height:100%;    
+  font-family: 'Marvel', sans-serif;
+  font-size: 16px;    
+  background-image: linear-gradient($secondary-linear-color,$primary-linear-color,$secondary-linear-color);;
+  color: $secondary-color;
+}

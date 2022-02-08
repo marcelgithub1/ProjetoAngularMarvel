@@ -12,3 +12,31 @@ app-card-item {
   width: 20%;
   margin-bottom: 1rem;  
 }
+
+@media screen and (max-width: 1440px) 
+{
+  .content-serie app-card-item {
+    width: 24%;
+  }
+}
+
+@media screen and (max-width: 992px) 
+{
+  .content-serie app-card-item {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) 
+{
+  .content-serie app-card-item {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) 
+{
+  .content-serie app-card-item {
+    width: 100%;
+  }
+}

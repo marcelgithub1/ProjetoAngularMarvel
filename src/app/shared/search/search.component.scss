@@ -37,3 +37,35 @@ input
   border: none;
   cursor:pointer;    
 }
+
+@media screen and (max-width: 1440px)
+{
+  .search
+  {
+    width: 24%;
+  }
+}
+
+@media screen and (max-width: 992px) 
+{
+  .search 
+  {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) 
+{
+  .search 
+  {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) 
+{
+  .search
+  {
+    width: 100%;
+  }
+}
