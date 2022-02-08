@@ -1,1 +1,6 @@
-<p>series works!</p>
+<div class="content-serie">
+    <app-card-item *ngFor="let serie of allSeries | async"
+    [img]="serie.thumbnail?.path + '.' + serie.thumbnail?.extension"
+    [title]="serie.title" [url]="['serie/' + serie.id]">
+    </app-card-item>
+</div>

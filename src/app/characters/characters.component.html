@@ -1,1 +1,6 @@
-<p>characters works!</p>
+<div class="content-character">
+    <app-card-item *ngFor="let character of allCharacters | async"
+    [img]="character.thumbnail?.path + '.' +character.thumbnail?.extension"
+    [title]="character.name" [url]="['character/' + character.id]">
+    </app-card-item>
+</div>

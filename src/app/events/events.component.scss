@@ -1,0 +1,14 @@
+@import 'src/assets/scss/variables.scss';
+
+.content-event
+{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+app-card-item {
+  max-height: 70%;
+  width: 20%;
+  margin-bottom: 1rem;
+}
