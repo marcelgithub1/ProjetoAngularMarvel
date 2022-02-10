@@ -24,8 +24,7 @@ export class SerieComponent implements OnInit {
     const idChar = this.route.snapshot.paramMap.get('id'); 
     
     this.serieService.getSerie(idChar).pipe(take(1)).subscribe(serie =>{
-      this.serie = serie.data.results[0];
-      console.log(this.serie)
+      this.serie = serie.data.results[0];      
     })    
   }
 

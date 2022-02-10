@@ -24,8 +24,7 @@ export class EventComponent implements OnInit {
     const idChar = this.route.snapshot.paramMap.get('id'); 
     
     this.eventService.getEvent(idChar).pipe(take(1)).subscribe(event =>{
-      this.event = event.data.results[0];
-      console.log(this.event)
+      this.event = event.data.results[0];      
     })    
   }
 }

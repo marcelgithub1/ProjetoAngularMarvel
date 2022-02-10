@@ -24,8 +24,7 @@ export class CharacterComponent implements OnInit {
     const idChar = this.route.snapshot.paramMap.get('id'); 
     
     this.characterService.getCharacter(idChar).pipe(take(1)).subscribe(character =>{
-      this.character = character.data.results[0];
-      console.log(this.character)
+      this.character = character.data.results[0];      
     })    
   }
 }

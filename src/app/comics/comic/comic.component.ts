@@ -24,8 +24,7 @@ export class ComicComponent implements OnInit {
     const idChar = this.route.snapshot.paramMap.get('id'); 
     
     this.comicService.getComic(idChar).pipe(take(1)).subscribe(comic =>{
-      this.comic = comic.data.results[0];
-      console.log(this.comic)
+      this.comic = comic.data.results[0];      
     })    
   }
 }
